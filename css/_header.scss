@@ -1,0 +1,65 @@
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+        & p {
+            font-size: 1em;
+            color: black;
+        }
+}
+
+.nom {
+    @include flexMid;
+    height: 63px;
+    margin: 0;
+    z-index: 2;
+    box-shadow: 0px 3px 3px #ccc;
+}
+
+.location {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: $background-color-medium;
+    z-index: 1;
+}
+
+.fa-map-marker-alt {
+    color: $background-color-darker;
+    padding-right: 18px;
+}
+
+.reserver_menu {
+    @include flexMid;
+    min-height: 285px;
+    background-color: $background-color-light;
+    padding: 20px;
+    box-sizing: border-box;    
+        & p {
+            font-size: 1.125em;
+        } 
+}
+
+.btn {
+    width: 217px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+    font-size: 1em;
+    color: white;
+    @include btnShadow;
+    margin: 10px 0 57px 0;
+    transition-property: opacity;
+    transition-property: box-shadow;
+    transition-duration: 100ms;
+    transition-delay: 100ms;
+        &:hover {
+            @include btnTransition;
+        }
+}
+

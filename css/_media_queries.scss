@@ -1,0 +1,23 @@
+@media screen and (min-width: 600px) {
+
+.container_cartes_restaurants {
+    text-align: center;
+}
+
+.fonctionnement {
+    text-align: center;
+}
+
+.bloc__cartes__restaurants {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+
+}

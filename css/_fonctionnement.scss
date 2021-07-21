@@ -1,0 +1,50 @@
+.fonctionnement {
+    padding: 2em;
+}
+
+.menu {
+    @include flexMid;
+}
+.btn__fonctionnement {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    @include btnShadow;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    width: 325px;
+    height: 75px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    background-color: $background-color-light;
+        &:hover {
+            @include btnTransition;
+            .fa-mobile-alt, .fa-list-ul, .fa-store {
+                color: $primary-color;
+            }
+
+        }
+}
+
+
+.numeros {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    left: -15px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    background-color: $primary-color;
+}
+
+.fa-mobile-alt, .fa-list-ul, .fa-store {
+    color: $icons-color-primary;
+    padding: 0 20px 0 20px;
+}

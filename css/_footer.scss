@@ -1,0 +1,27 @@
+footer {
+    background-color: $background-color-darker;
+    color: white;
+    padding: 25px;
+        & h2 {
+            font-family: 'Shrikhand', cursive;
+            font-size: 2em;
+            letter-spacing: 0.5px;
+        }
+        & ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        & li {
+            padding: 13px 0 0 0;
+        }
+}
+
+.fa-utensils {
+    color: white;
+    padding: 0 18px 0 0;
+}
+
+.fa-hands-helping {
+    color: white;
+    padding: 0 12px 0 0;
+}

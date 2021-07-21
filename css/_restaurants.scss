@@ -1,0 +1,67 @@
+.container_cartes_restaurants {
+    background-color: $background-color-light;
+    text-align: left;
+    padding: 60px 20px 65px 20px;
+}
+
+.bloc__cartes__restaurants {
+    @include flexMid;
+    grid-gap: 20px;
+}
+
+.cartes__restaurants {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+    width: 335px;
+    min-height: 250px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 50px #ccc;
+    box-sizing: border-box;
+        & a {
+            text-decoration: none;
+        }
+        & img {
+            border-radius: 20px 20px 0 0;
+            width: 335px;
+            height: 174px;
+            object-fit: cover;
+        }
+        & h3 {
+            padding-left: 14px;
+            margin: 0;
+        }
+        & p {
+            padding-left: 14px;
+            margin: 0;
+        }
+            &:hover {
+                @include btnTransition;
+            }
+}
+
+.cartes__restaurants__id {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: left;
+    min-height: 77px;
+}
+
+.nouveau {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    top: -160px;
+    left: 240px;
+    width: 80px;
+    height: 30px;
+    background-color: $tertiary-color;
+    color: #149373;
+    border-radius: 5px;
+}
+
