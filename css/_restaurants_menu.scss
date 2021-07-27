@@ -32,12 +32,6 @@
         }
 }
 
-.menu__entrees {
-    @include grid_gap_menu;
-        & h3 {
-            @include menu_h3;
-    }
-}
 
 .menu__item {
     position: relative; 
@@ -47,6 +41,9 @@
     box-sizing: border-box;
     @include btnShadow;
     animation: slide 3s;
+        &:hover {
+            @include btnTransition;
+        }
         & h4 {
             margin: 0;
         }
@@ -67,18 +64,18 @@
         }
 }
 
-.plats {
+.entrees, .plats, .desserts {
     @include grid_gap_menu;
-    & h3 {
-        @include menu_h3;
+        & h3 {
+            @include menu_h3;
     }
-}
-
-.desserts {
-    @include grid_gap_menu;
-    & h3 {
-        @include menu_h3;
-    }
+        h3::after {
+            content: "";
+            display: block;
+            width: 48px;
+            padding-top: 5px;
+            border-bottom: 3px solid $tertiary-color;
+        }
 }
 
 
