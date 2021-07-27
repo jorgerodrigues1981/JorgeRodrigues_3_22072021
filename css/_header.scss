@@ -9,6 +9,9 @@ header {
         & .fa-arrow-left {
             position: relative;
             left: -60px;
+                &:hover {
+                    color: $primary-color;
+                }
         }
 }
 

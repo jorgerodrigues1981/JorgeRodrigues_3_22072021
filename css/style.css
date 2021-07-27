@@ -157,6 +157,10 @@ header .fa-arrow-left {
   left: -60px;
 }
 
+header .fa-arrow-left:hover {
+  color: #9356DC;
+}
+
 .nom {
   display: -webkit-box;
   display: -ms-flexbox;
