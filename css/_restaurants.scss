@@ -41,12 +41,30 @@
             }
 }
 
+.cartes__restaurants:nth-child(1):after, .cartes__restaurants:nth-child(2):after {
+    content: 'Nouveau';
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    top: -250px;
+    left: 230px;
+    width: 80px;
+    height: 30px;
+    background-color: $tertiary-color;
+    color: #149373;
+    border-radius: 5px;
+    z-index: 1;
+}
+
 .cartes__restaurants__id {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-content: left;
     padding: 20px 20px 20px 10px;
+    margin: 0;
     z-index: 0;
 }
 

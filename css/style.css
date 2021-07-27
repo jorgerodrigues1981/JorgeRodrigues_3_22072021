@@ -445,6 +445,31 @@ header .fa-arrow-left:hover {
           box-shadow: 0px 3px 10px #353535;
 }
 
+.cartes__restaurants:nth-child(1):after, .cartes__restaurants:nth-child(2):after {
+  content: 'Nouveau';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -250px;
+  left: 230px;
+  width: 80px;
+  height: 30px;
+  background-color: #99E2D0;
+  color: #149373;
+  border-radius: 5px;
+  z-index: 1;
+}
+
 .cartes__restaurants__id {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,6 +484,7 @@ header .fa-arrow-left:hover {
   -ms-flex-line-pack: left;
       align-content: left;
   padding: 20px 20px 20px 10px;
+  margin: 0;
   z-index: 0;
 }
 
@@ -685,6 +711,16 @@ footer a:hover {
           align-items: center;
   text-align: left;
   padding: 50px 0 0px 0;
+}
+
+.hide {
+  display: block;
+  background-color: brown;
+  font-size: 2em;
+}
+
+.menu__item:hover + .hide {
+  display: block;
 }
 
 @media screen and (min-width: 600px) {
