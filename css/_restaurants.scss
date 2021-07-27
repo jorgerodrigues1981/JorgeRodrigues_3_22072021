@@ -14,16 +14,17 @@
     flex-flow: column wrap;
     text-align: left;
     width: 335px;
-    min-height: 250px;
+    min-height: fit-content;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 0px 50px #ccc;
     box-sizing: border-box;
+    z-index: 0;
         & a {
             text-decoration: none;
         }
         & img {
             border-radius: 20px 20px 0 0;
-            width: 335px;
+            width: 100%;
             height: 174px;
             object-fit: cover;
         }
@@ -45,7 +46,8 @@
     flex-flow: column wrap;
     justify-content: center;
     align-content: left;
-    min-height: 77px;
+    padding: 20px 20px 20px 10px;
+    z-index: 0;
 }
 
 .nouveau {
@@ -56,12 +58,22 @@
     position: relative;
     padding: 0;
     margin: 0;
-    top: -160px;
-    left: 240px;
+    top: -250px;
+    left: 230px;
     width: 80px;
     height: 30px;
     background-color: $tertiary-color;
     color: #149373;
     border-radius: 5px;
+    z-index: 1;
+}
+
+.far {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    top: -30px;
+    left: 280px;
+    width: 16px;
 }
 

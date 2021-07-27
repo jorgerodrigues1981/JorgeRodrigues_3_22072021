@@ -15,7 +15,6 @@ $icons-color-primary: #7E7E7E;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
 }
 
 @mixin flexRow {
@@ -24,6 +23,23 @@ $icons-color-primary: #7E7E7E;
     justify-content: center;
     align-items: center;
     text-align: left;
+}
+
+@mixin boxShadow {
+    box-shadow: 0px 3px 3px #ccc;
+}
+
+@mixin menu_h3 {
+    text-transform: uppercase;
+    text-decoration: underline 3px $tertiary-color;
+    text-underline-offset: 8px;
+    padding: 10px 10px 10px 20px;
+}
+
+@mixin grid_gap_menu {
+    display: flex;
+    flex-flow: column wrap;
+    grid-gap: 15px;
 }
 
 @mixin btnShadow {
@@ -41,28 +57,38 @@ $icons-color-primary: #7E7E7E;
 
 body {
     margin: 0;
+    z-index: 0;
+}
+
+main {
+    background-color: $background-color-light;
 }
 
 h1 {
     font-family: 'Shrikhand', cursive;
+    margin: 0;
 }
 
 h2 {
     font-size: 1.5em;
     font-weight: bold;
+    margin: 0;
+    padding: 20px 0 20px 0;
 }
 
 a {
     text-decoration: none;
     color: inherit;
         &:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
 }
+
 
 @import "loader";
 @import "header";
 @import "fonctionnement";
 @import "restaurants";
 @import "footer";
+@import "restaurants_menu";
 @import "media_queries";
