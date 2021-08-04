@@ -64,8 +64,35 @@ a:hover {
   font-size: 3em;
   color: white;
   z-index: 4;
-  -webkit-animation: color 3s 1;
-          animation: color 3s 1;
+  -webkit-animation: color 3s 1 forwards;
+          animation: color 3s 1 forwards;
+}
+
+.loader__rotative {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top: 10px solid #FF79DA;
+  border-bottom: 10px solid #FF79DA;
+  z-index: 3;
+  -webkit-animation: spin 3s infinite;
+          animation: spin 3s infinite;
+}
+
+.loader__rotative_small {
+  position: relative;
+  top: -160px;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-left: 5px dashed #99E2D0;
+  border-right: 5px dashed #99E2D0;
+  z-index: 3;
+  -webkit-animation: spinner 3s infinite;
+          animation: spinner 3s infinite;
 }
 
 @-webkit-keyframes opacity {
@@ -109,10 +136,10 @@ a:hover {
     color: #99E2D0;
   }
   60% {
-    color: #FF79DA;
+    color: #9356DC;
   }
   80% {
-    color: #9356DC;
+    color: #FF79DA;
   }
   100% {
     color: #99E2D0;
@@ -130,41 +157,14 @@ a:hover {
     color: #99E2D0;
   }
   60% {
-    color: #FF79DA;
+    color: #9356DC;
   }
   80% {
-    color: #9356DC;
+    color: #FF79DA;
   }
   100% {
     color: #99E2D0;
   }
-}
-
-.loader__rotative {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  border: 10px solid transparent;
-  border-top: 10px solid #FF79DA;
-  border-bottom: 10px solid #FF79DA;
-  z-index: 3;
-  -webkit-animation: spin 3s 1;
-          animation: spin 3s 1;
-}
-
-.loader__rotative_small {
-  position: relative;
-  top: -160px;
-  left: 0;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 10px solid transparent;
-  border-left: 10px solid #99E2D0;
-  border-right: 10px solid #99E2D0;
-  z-index: 3;
-  -webkit-animation: spinner 3s 1;
-          animation: spinner 3s 1;
 }
 
 @-webkit-keyframes spin {
@@ -671,11 +671,6 @@ footer a:hover {
           box-sizing: border-box;
 }
 
-.menu__container h2 {
-  font-family: 'Shrikhand', cursive;
-  font-size: 1.625em;
-}
-
 .menu__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -693,6 +688,11 @@ footer a:hover {
   padding: 20px;
 }
 
+.menu__title h2 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.625em;
+}
+
 .menu__title .far {
   position: relative;
   top: 0;
@@ -707,6 +707,7 @@ footer a:hover {
   background-color: white;
   max-height: 80px;
   border-radius: 20px;
+  max-width: 100%;
   padding: 20px;
   opacity: 0;
   z-index: 5;
@@ -940,6 +941,23 @@ footer a:hover {
   }
   h1 {
     font-size: 3em;
+  }
+  .menu__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    grid-gap: 30px;
+  }
+  .menu__item {
+    min-width: 400px;
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

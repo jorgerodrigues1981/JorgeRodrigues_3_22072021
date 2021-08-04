@@ -15,8 +15,33 @@
       font-size: 3em;
       color: white;
       z-index: 4;
-      animation: color 3s 1;
+      animation: color 3s 1 forwards;
     }
+}
+
+.loader__rotative {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top: 10px solid $secondary-color;
+  border-bottom: 10px solid $secondary-color;
+  z-index: 3;
+  animation: spin 3s infinite;
+}
+
+.loader__rotative_small {
+  position: relative;
+  top: -160px;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-left: 5px dashed $tertiary-color;
+  border-right: 5px dashed $tertiary-color;
+  z-index: 3;
+  animation: spinner 3s infinite;
 }
 
 @keyframes opacity {
@@ -29,34 +54,9 @@
   0% { color: $primary-color; }
   20% { color: $secondary-color; }
   40% { color: $tertiary-color; }
-  60% { color: $secondary-color; }
-  80% { color: $primary-color; }
+  60% { color: $primary-color; }
+  80% { color: $secondary-color; }
   100% { color: $tertiary-color; }
-}
-
-.loader__rotative {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  border: 10px solid transparent;
-  border-top: 10px solid $secondary-color;
-  border-bottom: 10px solid $secondary-color;
-  z-index: 3;
-  animation: spin 3s 1;
-}
-
-.loader__rotative_small {
-  position: relative;
-  top: -160px;
-  left: 0;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 10px solid transparent;
-  border-left: 10px solid $tertiary-color;
-  border-right: 10px solid $tertiary-color;
-  z-index: 3;
-  animation: spinner 3s 1;
 }
 
 @keyframes spin {

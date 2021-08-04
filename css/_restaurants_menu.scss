@@ -14,10 +14,7 @@
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-        & h2 {
-            font-family: 'Shrikhand', cursive;
-            font-size: 1.625em;
-        }
+        
 }
 
 .menu__title {
@@ -26,6 +23,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+        & h2 {
+            font-family: 'Shrikhand', cursive;
+            font-size: 1.625em;
+        }
         & .far {
             position: relative;
             top: 0;
@@ -41,6 +42,7 @@
     background-color: white;
     max-height: 80px;
     border-radius: 20px;
+    max-width: 100%;
     padding: 20px;
     opacity: 0;
     z-index: 5;
