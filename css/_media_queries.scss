@@ -1,5 +1,11 @@
 @media screen and (min-width: 600px) {
 
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    grid-gap: 30px;
+}
+
 .container_cartes_restaurants {
     text-align: center;
 }

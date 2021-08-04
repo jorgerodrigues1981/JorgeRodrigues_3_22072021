@@ -23,37 +23,57 @@
 .menu__title {
     display: flex;
     flex-flow: row wrap;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
-        & .fa-heart {
+        & .far {
+            position: relative;
+            top: 0;
+            left: 0;
+            font-size: 1.5em;
             width: 23px;
             height: 23px;
         }
 }
 
-
 .menu__item {
     position: relative; 
     background-color: white;
+    max-height: 80px;
     border-radius: 20px;
     padding: 20px;
+    opacity: 0;
+    z-index: 5;
     box-sizing: border-box;
     @include btnShadow;
-    animation: slide 3s;
-        &:hover {
-            @include btnTransition;
+    animation: slide 1s forwards;
+    animation-delay: 1s;
+        &.item__1 {
+            animation-delay: 0.1s;
         }
-        & h4 {
-            margin: 0;
+        &.item__2 {
+            animation-delay: 0.3s;
         }
+        
+        &.item__3 {
+            animation-delay: 0.5s;
+        }
+            &:hover {
+                @include btnTransition;
+                .check {
+                    transform: scaleX(1);
+                }
+                .description {
+                    width: calc(100% - 80px);
+                }
+                .fas {
+                    animation: roll 500ms 1 forwards;                   
+                }
+            }
+                & h4 {
+                    margin: 0;
+                }
 }
-
-@keyframes slide {
-    0% { opacity: 0; top: 10px; }
-    100% { opacity: 1; top: 0px; }
-}
-
 
 .description {
     display: flex;
@@ -61,6 +81,12 @@
     justify-content: space-between;
         & p {
             margin: 0;
+            min-width: 30px;
+            height: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-right: 10px;
         }
 }
 
@@ -69,6 +95,7 @@
         & h3 {
             @include menu_h3;
     }
+    //Bordure bottom 
         h3::after {
             content: "";
             display: block;
@@ -78,8 +105,37 @@
         }
 }
 
-
 .btn__commander {
     @include flexRow;
     padding: 50px 0 0px 0;
+}
+
+.check {
+    @include flexMid;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 80px;
+    border-radius: 0 20px 20px 0;
+    background-color: $tertiary-color;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+    transform-origin: right;
+        & .fas {
+            color: white;
+            font-size: 1.5em;
+        }
+}
+
+//Animations 
+
+@keyframes slide {
+    0% { opacity: 0; top: 10px; }
+    100% { opacity: 1; top: 0px; }
+}
+
+@keyframes roll {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(380deg);}
 }
