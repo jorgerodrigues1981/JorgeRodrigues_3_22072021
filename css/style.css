@@ -542,8 +542,8 @@ header .fa-arrow-left:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: left;
-      align-content: left;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   max-height: 75px;
   padding: 0;
   margin: 20px 0 0 15px;
