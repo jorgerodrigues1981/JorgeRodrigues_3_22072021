@@ -45,6 +45,8 @@
   animation: spinner 3s infinite;
 }
 
+// Animations pour le spin loader
+
 @keyframes opacity {
   0% { opacity: 1; z-index: 1;}
   99% { opacity: 1; z-index: 1;}

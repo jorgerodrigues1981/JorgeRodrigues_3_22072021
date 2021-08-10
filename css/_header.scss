@@ -62,13 +62,13 @@ header {
     border-radius: 20px;
     background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
     font-size: 1em;
+    cursor: pointer;
     color: white;
     @include btnShadow;
     margin: 10px 0 57px 0;
-    transition-property: opacity;
     transition-property: box-shadow;
+    transition-property: filter;
     transition-duration: 100ms;
-    transition-delay: 100ms;
         &:hover {
             @include btnTransition;
         }
@@ -76,4 +76,8 @@ header {
 
 .fonctionnement {
     background-color: white;
+}
+
+.btn__fonctionnement {
+    cursor: pointer;
 }

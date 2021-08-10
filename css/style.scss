@@ -9,6 +9,7 @@ $background-color-light: #F6F6F6;
 $icons-color-primary: #7E7E7E;
 
 
+// Mixin pour centrer tous les éléments 
 @mixin flexMid {
     display: flex;
     flex-flow: column wrap;
@@ -17,6 +18,7 @@ $icons-color-primary: #7E7E7E;
     text-align: center;
 }
 
+// Mixin pour centrer tous les éléments sauf le texte
 @mixin flexRow {
     display: flex;
     flex-flow: row wrap;
@@ -45,9 +47,10 @@ $icons-color-primary: #7E7E7E;
     box-shadow: 0px 3px 10px #ccc;
 }
 
+// Mixin pour l'effet de brighteness et shadow au survol des buttons et des cartes 
 @mixin btnTransition {
-    opacity: 80%;
-    box-shadow: 0px 3px 10px $background-color-darker;
+    filter: brightness(1.15);
+    box-shadow: 0px 1px 5px $background-color-darker;
 }
 
 * {
