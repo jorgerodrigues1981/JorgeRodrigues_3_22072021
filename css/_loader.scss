@@ -44,8 +44,8 @@
   height: 120px;
   border-radius: 50%;
   border: 10px solid transparent;
-  border-left: 5px dashed $tertiary-color;
-  border-right: 5px dashed $tertiary-color;
+  border-left: 5px solid $tertiary-color;
+  border-right: 5px solid $tertiary-color;
   z-index: 3;
   animation: spinner 3s infinite;
 }
