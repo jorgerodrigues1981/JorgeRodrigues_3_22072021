@@ -83,7 +83,7 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  max-height: 200px;
+  max-height: 250px;
 }
 
 .loader__rotative {
