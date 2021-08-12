@@ -729,6 +729,33 @@ footer a:hover {
   height: 23px;
 }
 
+.menu__title .far .fas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 24px;
+  width: 24px;
+  opacity: 0;
+  background: -webkit-linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.menu__title .far .fas:hover {
+  opacity: 1;
+}
+
 .menu__item {
   position: relative;
   background-color: white;
@@ -945,7 +972,7 @@ footer a:hover {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 867px) {
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
