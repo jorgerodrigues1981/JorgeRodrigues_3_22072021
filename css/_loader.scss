@@ -59,12 +59,12 @@
 }
 
 @keyframes color {
-  0% { color: $primary-color; }
+  0% { color: $tertiary-color; }
   20% { color: $secondary-color; }
   40% { color: $tertiary-color; }
-  60% { color: $primary-color; }
-  80% { color: $secondary-color; }
-  100% { color: $tertiary-color; }
+  60% { color: $secondary-color; }
+  80% { color: $tertiary-color; }
+  100% { color: $secondary-color; }
 }
 
 @keyframes spin {

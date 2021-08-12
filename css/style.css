@@ -146,7 +146,7 @@ a:hover {
 
 @-webkit-keyframes color {
   0% {
-    color: #9356DC;
+    color: #99E2D0;
   }
   20% {
     color: #FF79DA;
@@ -155,19 +155,19 @@ a:hover {
     color: #99E2D0;
   }
   60% {
-    color: #9356DC;
-  }
-  80% {
     color: #FF79DA;
   }
-  100% {
+  80% {
     color: #99E2D0;
+  }
+  100% {
+    color: #FF79DA;
   }
 }
 
 @keyframes color {
   0% {
-    color: #9356DC;
+    color: #99E2D0;
   }
   20% {
     color: #FF79DA;
@@ -176,13 +176,13 @@ a:hover {
     color: #99E2D0;
   }
   60% {
-    color: #9356DC;
-  }
-  80% {
     color: #FF79DA;
   }
-  100% {
+  80% {
     color: #99E2D0;
+  }
+  100% {
+    color: #FF79DA;
   }
 }
 
