@@ -1,19 +1,22 @@
 .fonctionnement {
-    padding: 2em;
+    padding: 20px;
 }
 
 .menu {
     @include flexMid;
 }
+
 .btn__fonctionnement {
     display: flex;
     flex-flow: row wrap;
     align-content: center;
+    position: relative;
+    left: 10px;
     @include btnShadow;
     font-size: 1em;
     font-weight: bold;
     color: black;
-    width: 325px;
+    width: 318px;
     height: 75px;
     border: none;
     border-radius: 20px;
@@ -27,7 +30,6 @@
 
         }
 }
-
 
 .numeros {
     display: flex;
