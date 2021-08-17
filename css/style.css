@@ -1036,5 +1036,8 @@ footer a:hover {
   h2 {
     text-align: center;
   }
+  footer li {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
