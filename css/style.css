@@ -1031,4 +1031,10 @@ footer a:hover {
     max-width: 100%;
   }
 }
+
+@media screen and (min-width: 386px) {
+  h2 {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
